@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK N 1 PURBALINGGA - Sekolah Menengah Kejuruan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <i class="fas fa-graduation-cap loader-icon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand text-primary" href="#home">
+                <i class="fas fa-graduation-cap me-2"></i>SMK N 1 PURBALINGGA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Profil Sekolah
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#sejarahModal">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#visiMisiModal">Visi & Misi</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#strukturModal">Struktur Organisasi</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#fasilitasModal">Fasilitas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Program Keahlian
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#jurusan">Teknik Komputer & Jaringan</a></li>
+                            <li><a class="dropdown-item" href="#jurusan">Rekayasa Perangkat Lunak</a></li>
+                            <li><a class="dropdown-item" href="#jurusan">Multimedia</a></li>
+                            <li><a class="dropdown-item" href="#jurusan">Akuntansi & Keuangan</a></li>
+                            <li><a class="dropdown-item" href="#jurusan">Bisnis Daring & Pemasaran</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Akademik
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#kurikulumModal">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#jadwalModal">Jadwal Pelajaran</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#kalenderModal">Kalender Akademik</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#prestasiModal">Prestasi Siswa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Kesiswaan
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#ekstrakurikulerModal">Ekstrakurikuler</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#osisModal">OSIS</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#beasiswaModal">Beasiswa</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#tataTertibModal">Tata Tertib</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#berita">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white d-flex align-items-center"
+        style="background: url('asset/2.jpg') center/cover no-repeat; height: 100vh; position: relative;">
+
+        <!-- Lapisan overlay biar teksnya tetap terbaca -->
+        <div class="overlay" style="position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.1);"></div>
+
+        <div class="container hero-content position-relative" style="z-index: 2;">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Selamat Datang di SMK N 1 PURBALINGGA</h1>
+                    <p class="lead mb-4">Membangun generasi unggul dengan pendidikan kejuruan berkualitas tinggi.
+                        Siapkan masa depan cemerlang bersama kami!</p>
+                    <div class="d-flex gap-3">
+                        <a href="#jurusan" class="btn btn-warning btn-lg">
+                            <i class="fas fa-book me-2"></i>Lihat Jurusan
+                        </a>
+                        <a href="#kontak" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">1250</div>
+                        <h5>Siswa Aktif</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">85</div>
+                        <h5>Tenaga Pengajar</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <h5>Program Keahlian</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <div class="stat-number">2500</div>
+                        <h5>Alumni Sukses</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Keunggulan SMK N 1 PURBALINGGA</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h5 class="card-title">Teknologi Modern</h5>
+                            <p class="card-text">Fasilitas laboratorium komputer dan perangkat teknologi terkini untuk
+                                mendukung pembelajaran praktis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5 class="card-title">Tenaga Pengajar Profesional</h5>
+                            <p class="card-text">Guru-guru berpengalaman dan bersertifikat yang siap membimbing siswa
+                                menuju kesuksesan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h5 class="card-title">Kerja Sama Industri</h5>
+                            <p class="card-text">Kemitraan dengan berbagai perusahaan untuk program magang dan
+                                penyaluran kerja lulusan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Keahlian Section -->
+    <section id="jurusan" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Program Keahlian</h2>
+                    <p class="lead mb-5">Pilih program keahlian yang sesuai dengan minat dan bakat Anda</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="jurusan-card">
+                        <div class="jurusan-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h5>Teknik Komputer & Jaringan</h5>
+                        <p>Mempelajari instalasi, konfigurasi, dan maintenance sistem komputer dan jaringan.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#tkjModal">Selengkapnya</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="jurusan-card">
+                        <div class="jurusan-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5>Rekayasa Perangkat Lunak</h5>
+                        <p>Belajar membuat aplikasi web, mobile, dan desktop dengan teknologi terkini.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#rplModal">Selengkapnya</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="jurusan-card">
+                        <div class="jurusan-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h5>Multimedia</h5>
+                        <p>Mengembangkan kreativitas dalam desain grafis, video editing, dan animasi.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#mmModal">Selengkapnya</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="jurusan-card">
+                        <div class="jurusan-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h5>Akuntansi & Keuangan</h5>
+                        <p>Menguasai sistem akuntansi, perpajakan, dan manajemen keuangan perusahaan.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#aklModal">Selengkapnya</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="jurusan-card">
+                        <div class="jurusan-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h5>Bisnis Daring & Pemasaran</h5>
+                        <p>Belajar strategi pemasaran digital dan pengelolaan bisnis online modern.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bdpModal">Selengkapnya</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="jurusan-card">
+                        <div class="jurusan-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h5>Teknik Mesin</h5>
+                        <p>Mempelajari teknologi manufaktur, maintenance mesin, dan otomasi industri.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#tmModal">Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="berita" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Berita Terkini</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card">
+                        <div class="news-image">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Juara 1 Lomba Programming</h5>
+                            <p class="card-text">Siswa SMK N 1 PURBALINGGA meraih juara 1 dalam lomba programming
+                                tingkat
+                                provinsi.</p>
+                            <small class="text-muted">15 Desember 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card">
+                        <div class="news-image">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kerjasama dengan PT. Tech Indonesia</h5>
+                            <p class="card-text">SMK N 1 PURBALINGGA menjalin kerjasama untuk program magang dan
+                                rekrutmen
+                                lulusan.</p>
+                            <small class="text-muted">10 Desember 2024</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card news-card">
+                        <div class="news-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wisuda Angkatan 2024</h5>
+                            <p class="card-text">Sebanyak 250 siswa dinyatakan lulus dan siap memasuki dunia kerja.</p>
+                            <small class="text-muted">5 Desember 2024</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Galeri Sekolah</h2>
+                    <p class="lead">Kegiatan dan fasilitas unggulan di SMK N 1 PURBALINGGA</p>
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div id="galleryCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="asset/6.jpg" class="d-block w-100" alt="Upacara Bendera">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Upacara Bendera</h5>
+                            <p>Kegiatan rutin yang menumbuhkan rasa disiplin dan nasionalisme siswa.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/7.jpeg" class="d-block w-100" alt="Kegiatan Praktek Siswa">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Praktik Siswa</h5>
+                            <p>Siswa melaksanakan kegiatan praktik di laboratorium komputer sekolah.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/1.jpg" class="d-block w-100" alt="Lomba Antar Sekolah">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Lomba Antar Sekolah</h5>
+                            <p>SMK N 1 PURBALINGGA aktif berpartisipasi dan berprestasi dalam berbagai lomba.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/8.jpg" class="d-block w-100" alt="Ruang Kelas Modern">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Ruang Kelas Modern</h5>
+                            <p>Dilengkapi dengan fasilitas multimedia untuk menunjang pembelajaran.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h5 class="mb-4">Informasi Kontak</h5>
+                        <div class="mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <span>Jl. Pendidikan No. 123, Purbalingga 12345</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <span>(021) 1234-5678</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <span>info@smkn1purbalingga.sch.id</span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-clock text-primary me-3"></i>
+                            <span>Senin - Jumat: 07:00 - 16:00 WIB</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h5 class="mb-4">Kirim Pesan</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subjek" class="form-label">Subjek</label>
+                                <input type="text" class="form-control" id="subjek" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <textarea class="form-control" id="pesan" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-warning mb-3">SMK N 1 PURBALINGGA</h5>
+                    <p>Sekolah Menengah Kejuruan yang berkomitmen menghasilkan lulusan berkualitas dan siap kerja dengan
+                        teknologi terdepan.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-warning mb-3">Menu Utama</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="#jurusan" class="text-light text-decoration-none">Jurusan</a></li>
+                        <li><a href="#berita" class="text-light text-decoration-none">Berita</a></li>
+                        <li><a href="#kontak" class="text-light text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-warning mb-3">Program Keahlian</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Teknik Komputer & Jaringan</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Rekayasa Perangkat Lunak</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Multimedia</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Akuntansi & Keuangan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-warning mb-3">Kontak Info</h6>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>(021) 1234-5678</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i>info@smkn1purbalingga.sch.id</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Purbalingga</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 SMK N 1 PURBALINGGA. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals for Jurusan Details -->
+    <div id="detailjurusan-container"></div>
+
+    <!-- Modals for Profil Sekolah -->
+    <div id="profilsekolah-container"></div>
+
+    <!-- Modals for Akademik -->
+    <div id="akademik-container"></div>
+
+    <!-- Modals for Kesiswaan -->
+    <div id="kesiswaan-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
